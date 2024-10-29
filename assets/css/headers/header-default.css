@@ -687,11 +687,6 @@ body.header-fixed-space-default {
   	right: 0;
 }
 
-.header .mega-menu .mega-menu-content {
-  	*zoom: 1;
-  	padding: 4px 15px;
-}
-
 .header .mega-menu .mega-menu-content:before,
 .header .mega-menu .mega-menu-content:after {
   	content: "";
