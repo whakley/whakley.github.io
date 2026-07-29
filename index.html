@@ -1,208 +1,252 @@
-<!DOCTYPE html>
-<html lang="en"> 
-<head>
-	<title>Wesley Chen</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wesley Chen — Software Developer & UBC Student</title>
+    <meta
+      name="description"
+      content="Portfolio of Wesley Chen, a UBC Computational Design and Intelligence student building full-stack applications, systems, and games."
+    />
+    <meta property="og:title" content="Wesley Chen — Software Developer & UBC Student" />
+    <meta
+      property="og:description"
+      content="Full-stack applications, intelligent systems, and games built in Vancouver."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://whakley.github.io/" />
+    <meta property="og:image" content="https://whakley.github.io/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#10211e" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/portfolio.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Wesley Chen, home">WC<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="resume-link" href="/Wesley-Chen-Resume.docx" download>
+        Résumé <span aria-hidden="true">↗</span>
+      </a>
+    </header>
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <main>
+      <section class="hero" id="top">
+        <div class="eyebrow">
+          <span class="status-dot" aria-hidden="true"></span>
+          Computational design student · Vancouver, BC
+        </div>
+        <h1>I build playful,<br /><span>useful software.</span></h1>
+        <div class="hero-bottom">
+          <p>
+            I’m Wesley — a UBC student exploring the space between software
+            engineering, intelligent systems, and game design.
+          </p>
+          <a class="circle-link" href="#work" aria-label="See selected work">
+            <span>See work</span><b aria-hidden="true">↓</b>
+          </a>
+        </div>
+        <div class="hero-stamp" aria-hidden="true">
+          <span>UBC</span><small>B.Sc. ’28</small>
+        </div>
+      </section>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="favicon.png">
+      <section class="section work-section" id="work">
+        <div class="section-heading">
+          <p>Selected work</p><span>2024 — 2026</span>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Full-stack product</span><time>July 2026</time>
+              </div>
+              <h2>BINGOals</h2>
+              <p>
+                A bingo-style goal-tracking app built end to end with React,
+                Node.js, PostgreSQL, a REST API, and a normalized database
+                designed for fast user-specific queries.
+              </p>
+              <ul aria-label="BINGOals technologies">
+                <li>React</li><li>Node.js</li><li>PostgreSQL</li><li>REST API</li>
+              </ul>
+            </div>
+            <div class="project-arrow" aria-hidden="true">↗</div>
+          </article>
 
-	<!-- Web Fonts -->
-	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>48-hour game jam</span><time>March 2025</time>
+              </div>
+              <h2>Entropy</h2>
+              <p>
+                A 2D game created with a three-person team at the Queen’s
+                University Game Jam. I built core gameplay systems in Godot and
+                helped the team iterate quickly under pressure.
+              </p>
+              <ul aria-label="Entropy technologies">
+                <li>Godot</li><li>GDScript</li><li>Game design</li><li>Git</li>
+              </ul>
+            </div>
+            <div class="project-arrow" aria-hidden="true">↗</div>
+          </article>
 
-	<!-- CSS Global Compulsory -->
-	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Award-winning puzzle game</span><time>September 2024</time>
+              </div>
+              <h2>Magnet Dudes</h2>
+              <p>
+                A 2D puzzle game made by a team of three in 48 hours. I designed
+                the core mechanics and all twelve levels; it placed first in
+                the Fun category at Jame Gam #35.
+              </p>
+              <ul aria-label="Magnet Dudes skills">
+                <li>Godot</li><li>Level design</li><li>Game mechanics</li>
+              </ul>
+            </div>
+            <div class="project-arrow" aria-hidden="true">↗</div>
+          </article>
 
-	<!-- CSS Header and Footer -->
-	<link rel="stylesheet" href="assets/css/headers/header-default.css">
-	<link rel="stylesheet" href="assets/css/footers/footer-v1.css">
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Hackathon productivity app</span><time>April 2024</time>
+              </div>
+              <h2>QuestLog</h2>
+              <p>
+                A Java-based habit tracker created at the Caltech Hackathon to
+                help people build positive routines and monitor daily
+                productivity.
+              </p>
+              <ul aria-label="QuestLog skills">
+                <li>Java</li><li>Productivity</li><li>Hackathon</li>
+              </ul>
+            </div>
+            <div class="project-arrow" aria-hidden="true">↗</div>
+          </article>
+        </div>
+      </section>
 
-	<!-- CSS Implementing Plugins -->
-	<link rel="stylesheet" href="assets/plugins/animate.css">
-	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css">
-	<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+      <section class="section about-section" id="about">
+        <div class="section-heading light">
+          <p>About me</p><span>Curious by default</span>
+        </div>
+        <div class="about-grid">
+          <div class="about-intro">
+            <p>I like turning unfamiliar problems into things people can actually use.</p>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m studying Computational Design and Intelligence at the
+              University of British Columbia, with a 3.80/4.33 GPA. My work
+              moves between full-stack applications, systems programming, and
+              small games built under wonderfully unreasonable deadlines.
+            </p>
+            <p>
+              Away from the editor, I enjoy creating spaces for people to
+              connect — from student events to community language circles.
+            </p>
+          </div>
+        </div>
 
-	<!-- CSS Theme -->
-	<link rel="stylesheet" href="assets/css/theme-colors/purple.css" id="style_color">
-	<link rel="stylesheet" href="assets/css/theme-skins/dark.css">
+        <div class="skill-grid">
+          <div>
+            <h3>Languages</h3>
+            <p>C · C++ · OCaml · Java · Python · JavaScript · Rust · R · MATLAB</p>
+          </div>
+          <div>
+            <h3>Web & tools</h3>
+            <p>React · HTML · CSS · Git · GitHub · Docker · CI/CD · Figma</p>
+          </div>
+          <div>
+            <h3>Currently learning</h3>
+            <p>Data structures · Software engineering · Probability & computing</p>
+          </div>
+        </div>
 
-</head>
+        <div class="credential">
+          <div>
+            <span>Certification</span>
+            <strong>Microsoft Certified: Azure Data Fundamentals</strong>
+          </div>
+          <time>July 2026</time>
+        </div>
+      </section>
 
-<body>
-	<div class="wrapper">
-		<!--=== Header ===-->
-		<div class="header">
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
-				<div class="container">
-					<ul class="nav navbar-nav">
-						<!-- Home -->
-						<li class="button">
-							<a href="index.html">
-								Home
-							</a>
-						</li>
-						<li class="button">
-							<a href="hobbies.html">
-								Hobbies
-							</a>
-						</li>
-						<li class="button">
-							<a href="projects.html">
-								Projects
-							</a>
-						</li>
-						<li class="button">
-							<a href="experiences.html">
-								Experiences
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-					<!-- End One Page -->
+      <section class="section experience-section">
+        <div class="section-heading">
+          <p>Community</p><span>Beyond the code</span>
+        </div>
+        <div class="timeline">
+          <article>
+            <time>2023 — 2025</time>
+            <div>
+              <h3>Event Planner</h3>
+              <p class="place">SFU Taiwanese Association</p>
+            </div>
+            <p class="detail">
+              Planned and hosted student events for 50+ attendees, coordinating
+              venues, schedules, activities, and supplies.
+            </p>
+          </article>
+          <article>
+            <time>2021 — 2022</time>
+            <div>
+              <h3>English Conversation Circle Assistant</h3>
+              <p class="place">Community volunteer</p>
+            </div>
+            <p class="detail">
+              Led welcoming weekly conversations and mini-lessons that helped
+              senior English learners build confidence.
+            </p>
+          </article>
+          <article>
+            <time>2023</time>
+            <div>
+              <h3>Festival Volunteer</h3>
+              <p class="place">Taiwanese Canadian Cultural Festival</p>
+            </div>
+            <p class="detail">
+              Supported visitors, stage setup, and event operations across a
+              busy community festival.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
 
-			<!--=== Content Part ===-->
-			<div class="container content-sm">
-				<div class="headline"><h1>Home</h1></div>
-				<!-- Service Blocks -->
-				<div class="headline"><h2>About Me</h2></div>
-				<div class="row margin-bottom-30">
-					<div class="col-sm-8">
-					<p>Hello, I am Wesley Chen and I am currently a 3rd year at UBC studying Cognition and Brain. I am Taiwanese and Canadian, and can speak both Mandarin and English. I can code in 3 different languages, Python, C, and C++. I have also created games using Godot as an engine. My interests are software engineering, UI/UX, and game development and wish to persue one of the two for my career. </p>
-					</div>
-					<div class ="col-sm-4">
-						<img class = "img" src = "assets/img/wesley.png" width="240" height="240"/>
-					</div>
-				</div>
-				<!-- End Service Blokcs -->
-
-				<!-- Recent Works -->
-				<div class="headline"><h2>Projects</h2></div>
-				<div class="row margin-bottom-20">
-					<div class="col-md-3 col-sm-6">
-						<div class="thumbnails thumbnail-style thumbnail-kenburn">
-							<div class="thumbnail-img">
-								<div class="overflow-hidden">
-									<img class="img-responsive" src="assets/img/magnetDudes.png" alt="MagnetDudes">
-								</div>
-								<a class="btn-more hover-effect" href="projects.html">read more +</a>
-							</div>
-							<div class="caption">
-								<h3><a class="hover-effect" href="#">Magnet Dudes</a></h3>
-								<p>Magnet Dudes is an indie puzzle game created by me and two others programmed in Godot using GDscript.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="thumbnails thumbnail-style thumbnail-kenburn">
-							<div class="thumbnail-img">
-								<div class="overflow-hidden">
-									<img class="img-responsive" src="assets/img/questLog.png" alt="QuestLog">
-								</div>
-								<a class="btn-more hover-effect" href="projects.html">read more +</a>
-							</div>
-							<div class="caption">
-								<h3><a class="hover-effect" href="#">QuestLog</a></h3>
-								<p>QuestLog is an application created by me and one other. It serves as an app the help people improve their everyday life. It was made using Java. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6">
-						<div class="thumbnails thumbnail-style thumbnail-kenburn">
-							<div class="thumbnail-img">
-								<div class="overflow-hidden">
-									<img class="img-responsive" src="assets/img/main/img3.jpg" alt="placeholder">
-								</div>
-								<a class="btn-more hover-effect" href="projects.html">read more +</a>
-							</div>
-							<div class="caption">
-								<h3><a class="hover-effect" href="#">Entropy</a></h3>
-								<p>Entropy is a indie game created by me and two others programmed in Godot using GDscript.</p>
-							</div>
-						</div>
-					</div>
-					<!-- <div class="col-md-3 col-sm-6">
-						<div class="thumbnails thumbnail-style thumbnail-kenburn">
-							<div class="thumbnail-img">
-								<div class="overflow-hidden">
-									<img class="img-responsive" src="assets/img/main/img17.jpg" alt="placeholder">
-								</div>
-								<a class="btn-more hover-effect" href="projects.html">read more +</a>
-							</div>
-							<div class="caption">
-								<h3><a class="hover-effect" href="#">To be Determined</a></h3>
-								<p>My friend and I are currently working on a mobile game. The name of the game is yet to be determined and is in it's early stages of development.</p>
-							</div>
-						</div>
-					</div> -->
-				</div>
-				<!-- End Recent Works -->
-
-				<!-- Info Blokcs -->
-				<div class="row margin-bottom-30">
-					<!-- Welcome Block -->
-					<div class="col-md-12 md-margin-bottom-40">
-						<div class="headline"><h2>Education</h2></div>
-						<div class="row">
-							<div class="col-sm-6">
-								<p><b>Dogwood Diploma</b></p>
-								<ul class="list-unstyled margin-bottom-20">
-									<li><i class="fa fa-check color-green"></i> A.R. MacNeill Secondary School</li>
-									<li><i class="fa fa-check color-green"></i> Graduated June 2023</li>
-								</ul>
-							</div>
-							<div class="col-sm-6">
-								<p><b>Bachelor of Applied Science</b></p>
-								<ul class="list-unstyled margin-bottom-20">
-									<li><i class="fa fa-check color-green"></i> University of British Columbia</li>
-									<li><i class="fa fa-check color-green"></i> BSc. Cognition and Brain</li>
-									<li><i class="fa fa-check color-green"></i> Expected December 2027</li>
-									<li><i class="fa fa-check color-green"></i> Current CGPA of 3.8</li>
-								</ul>
-							</div>
-						</div>
-					</div><!--/col-md-8-->
-
-			
-				</div>
-
-
-			</div>
-
-
-		<!--=== Footer Version 1 ===-->
-		<div class="footer-v1">
-			<div class="footer">
-				<div class="container">
-					<div class="row">
-						<div class ="col-md-6">
-							<a href ="https://github.com/whakley">Github</a><br>
-							<a href ="https://www.linkedin.com/in/wesley-chen-958517325/">Linkedin</a>
-						</div>
-						<div class ="col-md-6">
-							<p>Email: wesleyc1223@gmail.com</p>
-							<p>Phone: 604-618-0314</p>
-						</div>
-						<br><br><br><br><br><br><br><br><br><br><br>
-					</div>
-				</div>
-			</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	</body>
-	</html>
+    <footer id="contact">
+      <p class="footer-kicker">Have an interesting problem?</p>
+      <h2>Let’s build<br />something <span>good.</span></h2>
+      <div class="footer-links">
+        <a href="mailto:wesleyc1223@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/whakley" target="_blank" rel="noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/chwesley1223" target="_blank" rel="noreferrer">
+          LinkedIn <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div class="footer-base">
+        <span>Wesley Chen</span><span>Vancouver, BC · 2026</span>
+      </div>
+    </footer>
+  </body>
+</html>
