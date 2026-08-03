@@ -195,7 +195,13 @@ nav a:hover { color: var(--amber); }
   gap: 25px;
   padding: 58px 0;
   border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
   transition: padding 220ms ease;
+}
+.project-card:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 6px;
 }
 .project-card:last-child { border-bottom: 0; }
 .project-card::before {
@@ -208,7 +214,8 @@ nav a:hover { color: var(--amber); }
   transform-origin: bottom;
   transition: transform 220ms ease;
 }
-.project-card:hover::before { transform: scaleY(1); }
+.project-card:hover::before,
+.project-card:focus-visible::before { transform: scaleY(1); }
 .project-card:hover { padding-left: 20px; padding-right: 20px; }
 .project-number {
   padding-top: 6px;
@@ -261,7 +268,8 @@ nav a:hover { color: var(--amber); }
   font-size: 2rem;
   transition: transform 200ms ease;
 }
-.project-card:hover .project-arrow { transform: translate(7px, -7px); }
+.project-card:hover .project-arrow,
+.project-card:focus-visible .project-arrow { transform: translate(7px, -7px); }
 
 .about-section { background: var(--ink); color: var(--paper); }
 .section-heading.light { border-color: rgba(244, 240, 232, 0.25); }
