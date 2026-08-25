@@ -4,8 +4,8 @@
   --amber: #ffb11b;
   --mint: #c9f2df;
   --line: rgba(16, 33, 30, 0.2);
-  --sans: "Manrope", Arial, sans-serif;
-  --mono: "DM Mono", monospace;
+  --sans: Arial, Helvetica, sans-serif;
+  --mono: Arial, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
